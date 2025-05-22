@@ -71,9 +71,38 @@
   </div>
 </div>
 
+<!-- Carosello -->
+
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://picsum.photos/800/400" class="d-block w-100" alt="">
+    </div>
+    <div class="carousel-item">
+      <img src="https://picsum.photos/801/400" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://picsum.photos/802/400" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
 <!-- form lavora con noi -->
 <div class="container mt-5">
-    <h2 class="text-center text-white">Lavora con noi</h2>
+    <h2 class="text-center text-danger-emphasis">Lavora con noi</h2>
     
     <form>
         <!-- Campo Email -->
@@ -113,6 +142,69 @@
     </div>
 </div>
 
+<!-- FAQ -->
+ <!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAQ - Ululato Cinematografico</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center text-danger-emphasis">FAQ - Domande Frequenti 🎬🐺</h2>
+    
+    <div class="accordion" id="faqAccordion">
+      
+      <!-- Prima domanda -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
+            🎟️ Come posso acquistare i biglietti?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Puoi acquistare i biglietti online sul nostro sito ufficiale oppure direttamente alla cassa del cinema.
+          </div>
+        </div>
+      </div>
+
+      <!-- Seconda domanda -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+            🍿 Sono disponibili snack e bevande?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Certamente! Il nostro cinema offre una vasta selezione di snack, popcorn e bevande fresche per accompagnare la tua esperienza.
+          </div>
+        </div>
+      </div>
+
+      <!-- Terza domanda -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+            📍 Dove si trova Ululato Cinematografico?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Il nostro cinema si trova in **Via della Luna 42, Vittorio Veneto, Italia**. Ti aspettiamo per una serata indimenticabile! 🌙🎬
+          </div>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+
 <!-- foother -->
 <footer class="bg-dark text-center text-white mt-5">
   <div class="container p-4">
@@ -140,13 +232,6 @@
 
           🎥 La nostra filosofia
           🎞️ Film per tutti i gusti – Dai blockbuster spettacolari ai gioielli del cinema indipendente. 🔥 Atmosfera immersiva – Tecnologia all’avanguardia per un’esperienza straordinaria. 🌕 Eventi speciali – Maratone horror, retro movie nights e anteprime esclusive.</p>
-
-
-
-
-
-
-
 
     <!-- Bot-JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
