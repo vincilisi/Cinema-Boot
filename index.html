@@ -13,9 +13,10 @@
   </head>
   <body>
     <!-- NAvBar -->
-     <nav class="navbar bg-body-tertiary">
+
+     <nav class="navbar bg-body-dark">
   <div class="container-fluid">
-    <a class="navbar-brand"><img src="/media/logo.png" alt="logo" width="150" height="150" class="d-inline-block align-text-top"></a>
+    <a class="navbar-brand"><img src="/media/logo-removebg-preview.png" alt="logo" width="150" height="150" class="d-inline-block align-text-top"></a>
     <form class="d-flex" role="search">
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
       <button class="btn btn-outline-success" type="submit">Search</button>
@@ -23,7 +24,122 @@
   </div>
 </nav>
 <!-- Header -->
+
  <header><h1 class="text-center">Ululato cinematografico</h1></header>
+
+<!-- Card-Film -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2 class="text-center">Film</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="/media/p9379266_p_v8_ah.jpg" class="card-img-top" alt="The Conjuring">
+        <div class="card-body">
+          <h3 class="card-title text-danger-emphasis">The Conjuring</h3>
+          <p class="card-text">Nel 1970, gli investigatori del paranormale e demonologi Lorraine (Vera Farmiga) e Ed (Patrick Wilson) Warren vengono convocati a casa di Carolyn (Lili Taylor) e Roger (Ron Livingston) Perron. I Perron e le loro cinque figlie si sono recentemente trasferiti in una fattoria isolata, dove una presenza soprannaturale si è fatta sentire.</p>
+          <a href="https://www.rottentomatoes.com/m/the_conjuring" class="btn btn-primary">Guardalo subito</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="https://resizing.flixster.com/9u5cdNvdlKnAmqAOZ0PSS1q9-68=/fit-in/705x460/v2/https://resizing.flixster.com/lhIKIMKOYf_zGspHuq6UkGinzRQ=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2UzZDdjZmQ5LTgzMWQtNGU0My04NjFmLTJiYWQ3YTQ3NGU3MC5qcGc=" class="card-img-top" alt="The Conjuring">
+        <div class="card-body">
+          <h3 class="card-title text-danger-emphasis">Lilo & Stich</h3>
+          <p class="card-text">Ambientato nelle splendide Isole Hawaii, il film segue Lilo, una bambina solitaria e piena di fantasia, che cerca disperatamente di trovare il proprio posto nel mondo. Il suo desiderio più grande è avere un amico che la faccia sentire amata. La sua vita cambia quando incontra Stitch, un alieno geneticamente modificato dallo scienziato Jumba Jookiba per essere un'arma di distruzione.</p>
+          <a href="https://www.rottentomatoes.com/m/lilo_and_stitch_2025" class="btn btn-primary">Guardalo subito</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="https://resizing.flixster.com/KQ23z5FwNd3noiTHL68C1nOcl8Q=/206x305/v2/https://resizing.flixster.com/9GzvfSWe1iPtRk_vtcfpHIQGyCI=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2U2MzgyZDIyLWNjZmYtNGU5NS05ZjczLTYyZGE1ZGIyYzIxNC5qcGc=" class="card-img-top" alt="The Conjuring">
+        <div class="card-body">
+          <h3 class="card-title text-danger-emphasis">Thunderblots</h3>
+          <p class="card-text">In Thunderbolts, i Marvel Studios riuniscono un'insolita squadra di anti-eroi: Yelena Belova, Bucky Barnes, Red Guardian, Ghost, Taskmaster e John Walker. Dopo essere caduti in una trappola mortale orchestrata da Valentina Allegra de Fontaine, questi emarginati disillusi devono intraprendere una missione pericolosa che li costringerà a confrontarsi con gli angoli più oscuri del loro passato. Questa squadra disfunzionale riuscirà a trovare la redenzione e a unirsi come qualcosa di più grande prima che sia troppo tardi, o finiranno per distruggersi a vicenda?</p>
+          <a href="https://www.rottentomatoes.com/m/thunderbolts" class="btn btn-primary">Guardalo subito</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- form lavora con noi -->
+<div class="container mt-5">
+    <h2 class="text-center text-white">Lavora con noi</h2>
+    
+    <form>
+        <!-- Campo Email -->
+        <div class="mb-3">
+            <label for="email" class="form-label text-white">Inserisci la tua email</label>
+            <input type="email" class="form-control" id="email" placeholder="esempio@email.com" required>
+        </div>
+
+        <!-- Campo Password -->
+        <div class="mb-3">
+            <label for="password" class="form-label text-white">Inserisci la tua password</label>
+            <input type="password" class="form-control" id="password" placeholder="••••••••" required>
+        </div>
+
+        <!-- Pulsante per aprire il Modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#thankYouModal">
+            Invia
+        </button>
+    </form>
+</div>
+
+<!-- Modal di conferma -->
+<div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="thankYouModalLabel">Grazie!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+            </div>
+            <div class="modal-body">
+                Grazie per averci contattato! Ti risponderemo al più presto.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- foother -->
+<footer class="bg-dark text-center text-white mt-5">
+  <div class="container p-4">
+    <h5 class="text-uppercase">Ululato cinematografico</h5>
+    <p>Un sito dedicato agli amanti del cinema e delle serie TV. Scopri le ultime novità, recensioni e molto altro!</p>
+    <div class="row">
+      <div class="col">
+        <h6>Contatti</h6>
+        <p><img src="/media/envelope.svg" alt="email" width="20" height="20"> Email: info@ululatocinematografico.it</p>
+        <p><img src="/media/whatsapp.svg" alt="whatsapp" width="20" height="20"> WhatsApp: +39 0422 123 456</p>
+        <p><img src="/media/geo.svg" alt="geo"> Via della Luna 42, 31029 Vittorio Veneto, Italia</p>
+      <h6>Soial</h6>
+      <p><img src="/media/facebook.svg" alt="facebook"> Ululato Cinematografico</p>
+      <p><img src="/media/instagram.svg" alt="instagram"> @ululatocine</p>
+      <p><img src="/media/tiktok.svg" alt="tiktok"> @ululatocine</p>
+      <h6>Info</h6>
+      <p><img src="/media/calendar-event.svg" alt="clock"> Lun-Ven: 9:00-18:00</p>
+      <p><img src="/media/envelope.svg" alt="clock"> Sab-Dom: 9:00-23</p>
+      <p>P.iva: 12345678901</p>
+      <p>Copyright © 2023 Ululato Cinematografico</p>
+      <p>🎭 Ululato Cinematografico – Dove il Cinema Ruggisce
+            Benvenuti su Ululato Cinematografico, il cinema dove la magia del grande schermo incontra l’anima selvaggia della notte! 🌙✨
+
+          Fondato da Vincenzo, un appassionato cinefilo di 26 anni, Ululato Cinematografico nasce con l’obiettivo di trasformare ogni proiezione in un’esperienza unica e indimenticabile. Qui, i film non sono solo intrattenimento, ma un viaggio tra emozioni, suspence e adrenalina pura!
+
+          🎥 La nostra filosofia
+          🎞️ Film per tutti i gusti – Dai blockbuster spettacolari ai gioielli del cinema indipendente. 🔥 Atmosfera immersiva – Tecnologia all’avanguardia per un’esperienza straordinaria. 🌕 Eventi speciali – Maratone horror, retro movie nights e anteprime esclusive.</p>
 
 
 

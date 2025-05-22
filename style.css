@@ -1,0 +1,19 @@
+body{
+    background-image: url('media/umanomicinema.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+@font-face {
+    font-family: "Cinema ST";
+    src: url("font/Cinema_ST.woff") format("woff");
+}
+
+h1{
+    color: red;
+    font-family: "Cinema ST", sans-serif;
+    font-size: 80px;
+    text-align: center;
+}
